@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faThumbsUp, faStar } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faThumbsUp, faStar } from '@fortawesome/free-solid-svg-icons';
 
 const Wrapper = styled.div`
   display: flex;
@@ -21,7 +21,7 @@ const CardInfo = styled.div`
 
 const Keyword = styled.button`
   padding: 5px 10px;
-  background-color: #49A28E;
+  background-color: #49a28e;
   margin: 10px;
   text-align: center;
   font-size: 14px;
@@ -31,8 +31,8 @@ const Keyword = styled.button`
   cursor: pointer;
   transition: all 0.25s ease-in-out;
   &:hover {
-		background-color: #59c1aa;
-	}
+    background-color: #59c1aa;
+  }
 `;
 
 const Likes = styled.button`
@@ -45,34 +45,26 @@ const LikeAmount = styled.span`
   margin: 5px 5px 0 0;
 `;
 
-export function ImageCard () {
-  // const categories = [];
-
+export function ImageCard() {
   return (
     <Wrapper>
-      <CardImage/>
+      <CardImage />
       <CardInfo>
-        <Keyword>
-          test
-        </Keyword>
-        <Keyword>
-          longerTest
-        </Keyword>
-        <Keyword>
-          cat
-        </Keyword>
-        <Keyword>
-          doge
-        </Keyword>
+        <Keyword>test</Keyword>
+        <Keyword>longerTest</Keyword>
+        <Keyword>cat</Keyword>
+        <Keyword>doge</Keyword>
         <div>
           <Likes>
-            <LikeAmount>54</LikeAmount><FontAwesomeIcon icon={faThumbsUp} />
+            <LikeAmount>54</LikeAmount>
+            <FontAwesomeIcon icon={faThumbsUp} />
           </Likes>
           <Likes>
-            <LikeAmount>93</LikeAmount><FontAwesomeIcon icon={faStar} />
+            <LikeAmount>93</LikeAmount>
+            <FontAwesomeIcon icon={faStar} />
           </Likes>
         </div>
       </CardInfo>
     </Wrapper>
   );
-};
+}

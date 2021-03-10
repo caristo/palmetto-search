@@ -4,27 +4,22 @@ import styled from 'styled-components';
 import SearchForm from './components/searchForm';
 import { SavedItemsList } from './components/savedItemsList';
 
-
 const Wrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
   justify-content: center;
 `;
-  
-const LeftColumn = styled.div`
-  
-`;
+
+const LeftColumn = styled.div``;
 
 const Divider = styled.div`
   margin: 35px 50px;
-  border: 1px solid #F3F1F4;
+  border: 1px solid #f3f1f4;
   height: 500px;
 `;
 
-const RightColumn = styled.div`
-  
-`;
+const RightColumn = styled.div``;
 
 function App() {
   return (
@@ -34,7 +29,7 @@ function App() {
       </LeftColumn>
       <Divider />
       <RightColumn>
-      <SavedItemsList />
+        <SavedItemsList />
       </RightColumn>
     </Wrapper>
   );

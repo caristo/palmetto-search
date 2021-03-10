@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
-// Styled component named StyledButton
 const StyledButton = styled.button`
   width: 100%;
-  background-color: #331BC9;
+  background-color: #331bc9;
   font-size: 24px;
   font-weight: bold;
   color: white;
@@ -14,11 +13,10 @@ const StyledButton = styled.button`
   border-radius: 6px;
   transition: all 0.25s ease-in-out;
   &:hover {
-		background-color: #628bff;
-	}
+    background-color: #628bff;
+  }
 `;
 
-export function SearchButton () {
-  // Use it like any other component.
+export function SearchButton() {
   return <StyledButton>Search</StyledButton>;
-};
+}
