@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;       
+  background-image: url('./img/carat_down.svg');   /* Add custom arrow */
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 35px;
+}

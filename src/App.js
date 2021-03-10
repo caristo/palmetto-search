@@ -1,24 +1,42 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import styled from 'styled-components';
+import SearchForm from './components/searchForm';
+import { SavedItemsList } from './components/savedItemsList';
+
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+`;
+  
+const LeftColumn = styled.div`
+  
+`;
+
+const Divider = styled.div`
+  margin: 35px 50px;
+  border: 1px solid #F3F1F4;
+  height: 500px;
+`;
+
+const RightColumn = styled.div`
+  
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <LeftColumn>
+        <SearchForm />
+      </LeftColumn>
+      <Divider />
+      <RightColumn>
+      <SavedItemsList />
+      </RightColumn>
+    </Wrapper>
   );
 }
 
