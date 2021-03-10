@@ -18,7 +18,7 @@ class CategorySelect extends Component {
   render() {
     const { categories } = this.props;
     return (
-      <Select name="cars" id="cars">
+      <Select>
         {categories.map((category, index) => {
           return (
             <option key={index} value={category}>

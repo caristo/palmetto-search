@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
+// import axios from 'axios';
 import { SearchButton } from './searchButton';
 import { KeywordInput } from './keywordInput';
 import CategorySelect from './categorySelect';
 import { ImageCard } from './imageCard';
 
 class SearchForm extends Component {
+  state = {
+    searchText: '',
+    amount: 10,
+    category: '',
+    apiUrl: 'https://pixabay.com/api',
+    apiKey: '1462867-dcccddb8e882bf2a2eb34e96f',
+    images: [],
+  };
+
   categories = [
     'fashion',
     'nature',
@@ -31,7 +41,7 @@ class SearchForm extends Component {
   render() {
     return (
       <>
-        <KeywordInput />
+        <KeywordInput value={this.state.searchText} />
         <CategorySelect categories={this.categories} />
         <SearchButton />
         <ImageCard />

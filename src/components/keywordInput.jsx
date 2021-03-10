@@ -12,6 +12,6 @@ const Input = styled.input`
   margin: 20px 0;
 `;
 
-export function KeywordInput() {
-  return <Input defaultValue="Keyword..." type="text" />;
+export function KeywordInput(props) {
+  return <Input defaultValue="Keyword..." type="text" onChange={props.onChange} />;
 }
