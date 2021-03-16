@@ -16,9 +16,9 @@ const Select = styled.select`
 
 class CategorySelect extends Component {
   render() {
-    const { categories } = this.props;
+    const { categories, onSelect } = this.props;
     return (
-      <Select>
+      <Select onChange={onSelect}>
         {categories.map((category, index) => {
           return (
             <option key={index} value={category}>

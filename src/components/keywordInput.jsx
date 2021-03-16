@@ -10,8 +10,11 @@ const Input = styled.input`
   font-size: 16px;
   font-style: italic;
   margin: 20px 0;
+  ::-webkit-input-placeholder {
+    color: #a8a8a8;
+  }
 `;
 
 export function KeywordInput(props) {
-  return <Input defaultValue="Keyword..." type="text" onChange={props.onChange} />;
+  return <Input placeholder="Keyword..." type="text" onChange={props.onChange} />;
 }

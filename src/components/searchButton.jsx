@@ -17,6 +17,6 @@ const StyledButton = styled.button`
   }
 `;
 
-export function SearchButton() {
-  return <StyledButton>Search</StyledButton>;
+export function SearchButton(props) {
+  return <StyledButton onClick={props.click}>Search</StyledButton>;
 }
